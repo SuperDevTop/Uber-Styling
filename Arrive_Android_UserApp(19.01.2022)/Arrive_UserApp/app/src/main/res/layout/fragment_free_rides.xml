@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1CA8DE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/want_more"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_5dp"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/get_ride"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            style="@style/Hyperlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_15dp"
+            android:gravity="center"
+            android:text="@string/how_invite_works"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_40dp"
+            android:contentDescription="@string/app_name"
+            android:paddingBottom="@dimen/padding_40dp"
+            android:src="@drawable/free_rides" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_15dp"
+            android:gravity="center"
+            android:text="@string/your_code"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor" />
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/whiteColor" />
+
+        <ImageView
+            android:id="@+id/imgInvite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/send_invite" />
+    </LinearLayout>
+</FrameLayout>

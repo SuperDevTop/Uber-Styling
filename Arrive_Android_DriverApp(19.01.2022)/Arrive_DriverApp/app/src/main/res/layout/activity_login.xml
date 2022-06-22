@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/mobile"
+                android:drawableLeft="@drawable/mobile"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:gravity="center"
+                android:text="@string/mobile"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/blueColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center">
+
+                <com.rilixtech.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/intro_background"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    app:ccp_defaultCode="81"
+                    app:ccp_hideNameCode="true"
+                    app:ccp_textColor="@color/galleryItemOverlay" />
+
+                <EditText
+                    android:id="@+id/txtMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/padding_10dp"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:layout_toEndOf="@id/ccp"
+                    android:layout_toRightOf="@id/ccp"
+                    android:background="@drawable/intro_background"
+                    android:gravity="center"
+                    android:hint="@string/enter_mobile"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay" />
+
+                <ImageView
+                    android:id="@+id/imgCross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/padding_20dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/cross"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:gravity="center"
+                android:text="@string/password"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/blueColor" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:gravity="center"
+                android:hint="@string/enter_pass"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/padding_40dp"
+                android:layout_height="1dp"
+                android:background="@color/blueColor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:gravity="center"
+                android:onClick="ForgotClick"
+                android:text="@string/forgot"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/blueColor" />
+
+            <View
+                android:layout_width="@dimen/padding_40dp"
+                android:layout_height="1dp"
+                android:background="@color/blueColor" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:contentDescription="@string/todo"
+            android:onClick="HomeClick"
+            android:src="@drawable/login_blue" />
+
+        <LinearLayout
+            android:id="@+id/layoutSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:gravity="center"
+            android:onClick="SignupClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/dont_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:text="@string/dont_have_an_account"
+                android:textAlignment="center"
+                android:textColor="@color/galleryItemOverlay" />
+
+            <TextView
+                android:id="@+id/tv_signup_here"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_5dp"
+                android:paddingTop="@dimen/padding_5dp"
+                android:paddingRight="@dimen/padding_5dp"
+                android:paddingBottom="@dimen/padding_5dp"
+                android:text="@string/signup"
+                android:textAllCaps="true"
+                android:textColor="@color/galleryItemOverlay" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_10dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:text="@string/by_signUp"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorLink="@color/galleryItemOverlay"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

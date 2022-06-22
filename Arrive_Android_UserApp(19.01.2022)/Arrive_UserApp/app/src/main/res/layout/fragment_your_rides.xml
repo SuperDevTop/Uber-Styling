@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1CA8DE">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.design.widget.TabLayout
+            android:id="@+id/rides_view_pager_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1CA8DE"
+            android:elevation="@dimen/padding_5dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/whiteColor"
+            app:tabIndicatorHeight="3dp"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/whiteColor"
+            app:tabTextColor="@color/dullGreyColor"
+            tools:targetApi="lollipop" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rides_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rides_view_pager_tabs" />
+    </RelativeLayout>
+</FrameLayout>

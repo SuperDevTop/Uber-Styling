@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:maxWidth="400dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your Friend want to split booking fare with you."
+        android:textColor="@color/blackColor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="?android:attr/buttonBarButtonStyle"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_top_25dp"
+            android:layout_marginLeft="@dimen/margin_top_25dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_marginEnd="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button_white"
+            android:gravity="center"
+            android:onClick="CancelClick"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="#1a1a1a"
+            tools:ignore="MissingPrefix" />
+
+        <Button
+            android:id="@+id/btnAccept"
+            style="?android:attr/buttonBarButtonStyle"
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_10dp"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:layout_marginEnd="@dimen/margin_top_25dp"
+            android:layout_marginRight="@dimen/margin_top_25dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_button"
+            android:gravity="center"
+            android:onClick="AcceptClick"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+</LinearLayout>

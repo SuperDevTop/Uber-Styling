@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_20dp">
+
+    <ImageView
+        android:id="@+id/imgCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contentDescription="@string/todo"
+        android:onClick="BackClick"
+        android:padding="@dimen/padding_20dp"
+        android:src="@drawable/cross_grey" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/drop_off"
+        android:textAllCaps="true"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_placeholder" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:gravity="center"
+        android:text="@string/pratek"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_20dp"
+        android:drawableLeft="@drawable/loc"
+        android:drawablePadding="@dimen/padding_10dp"
+        android:drawableStart="@drawable/loc"
+        android:gravity="center"
+        android:text="@string/drop_off_loc"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_20dp"
+        android:gravity="center"
+        android:text="@string/otp"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/layoutOTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et1"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/passcodebottomline"
+            android:clickable="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:id="@+id/et2"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/passcodebottomline"
+            android:clickable="false"
+            android:focusableInTouchMode="true"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:id="@+id/et3"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/passcodebottomline"
+            android:clickable="false"
+            android:focusableInTouchMode="true"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:id="@+id/et4"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/passcodebottomline"
+            android:clickable="false"
+            android:focusableInTouchMode="true"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingBottom="15dp"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textSize="15sp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:contentDescription="@string/todo"
+        android:onClick="SubmitClick"
+        android:src="@drawable/submit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_top_10dp"
+        android:gravity="center"
+        android:onClick="BackClick"
+        android:text="@string/close"
+        android:textAllCaps="true"
+        android:textColor="#F9992D"
+        android:textSize="15sp" />
+</LinearLayout>

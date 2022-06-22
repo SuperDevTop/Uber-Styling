@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueColor"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/blueColor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:contentDescription="@string/todo"
+                android:onClick="BackClick"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/select_issue"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:elevation="@dimen/padding_5dp"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp"
+                tools:targetApi="lollipop">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/padding_10dp"
+                            android:layout_marginStart="@dimen/padding_10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txtTime"
+                                fontPath="fonts/Poppins-Regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="#1a1a1a"
+                                android:textSize="15sp"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/booking_startPoint"
+                                fontPath="fonts/Poppins-Regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_10dp"
+                                android:drawableLeft="@drawable/pickup_dot_icon"
+                                android:drawablePadding="@dimen/padding_5dp"
+                                android:drawableStart="@drawable/pickup_dot_icon"
+                                android:text=""
+                                android:textColor="#272928"
+                                tools:ignore="MissingPrefix" />
+
+                            <TextView
+                                android:id="@+id/booking_endPoint"
+                                fontPath="fonts/Poppins-Regular.ttf"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/padding_10dp"
+                                android:drawableLeft="@drawable/loc"
+                                android:drawablePadding="@dimen/padding_5dp"
+                                android:drawableStart="@drawable/loc"
+                                android:text=""
+                                android:textColor="#272928"
+                                tools:ignore="MissingPrefix" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EAEBEB" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <FrameLayout
+                android:id="@+id/profile_image_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user_placeholder" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/padding_30dp"
+                    android:layout_height="@dimen/padding_30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="@dimen/padding_30dp"
+                    android:src="@drawable/camera" />
+            </FrameLayout>
+
+            <TextView
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/upload_image"
+                android:textColor="#272928"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/etRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_15dp"
+                android:background="@drawable/remark_background"
+                android:gravity="top|start"
+                android:hint="@string/remark"
+                android:lines="5"
+                android:padding="@dimen/padding_5dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/submit"
+                android:gravity="center"
+                android:onClick="SubmitClick" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

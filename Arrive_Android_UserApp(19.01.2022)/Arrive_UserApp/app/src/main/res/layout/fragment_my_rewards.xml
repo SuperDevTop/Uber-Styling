@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2abbe7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/padding_5dp"
+                android:text="@string/member_yet"
+                android:textColor="@color/whiteColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/earn_points"
+                android:textColor="@color/whiteColor" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/reward1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/ultimate_goal"
+                android:textColor="@color/whiteColor" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/join_now_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/whiteColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/join"
+                    android:textColor="@color/whiteColor" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="@color/whiteColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingStart="@dimen/padding_20dp"
+                    android:text="1."
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingStart="@dimen/padding_10dp"
+                    android:text="@string/register"
+                    android:textColor="@color/whiteColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingStart="@dimen/padding_20dp"
+                    android:text="2."
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingStart="@dimen/padding_10dp"
+                    android:text="@string/confirm_mail"
+                    android:textColor="@color/whiteColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingStart="@dimen/padding_20dp"
+                    android:text="3."
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingEnd="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingStart="@dimen/padding_10dp"
+                    android:text="@string/once_obtain"
+                    android:textColor="@color/whiteColor" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

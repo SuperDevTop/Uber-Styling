@@ -1,0 +1,428 @@
+<resources>
+    <string name="app_name">Arrive5 Driver</string>
+    <string name="enter_pass">Enter Password</string>
+    <string name="enter_mobile">Enter Mobile Number</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t have an account ?</string>
+    <string name="signup">Signup</string>
+    <string name="by_signUp">By signing up,you agree to our <u>terms &amp; conditions,privacy policy Arbitration of disputes and waiver of class action claims</u> </string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="back_login">Back to Login</string>
+    <string name="verify_number">Verify your number</string>
+    <string name="insert_code">Please insert the code</string>
+    <string name="otp_sent_to">Sent to</string>
+    <string name="action_settings">Settings</string>
+    <string name="john">John Smith</string>
+    <string name="joined">Joined</string>
+    <string name="oct">APRIL 2018</string>
+    <string name="delhi">New Delhi</string>
+    <string name="enrique">Enrique iglesias</string>
+    <string name="fun_loving">I am very fun loving guy</string>
+    <string name="my_points">My Reward Points</string>
+    <string name="total_points">Total Points</string>
+    <string name="used_points">Used Points</string>
+    <string name="cancel_points">Cancelled Points</string>
+    <string name="avail_points">Available Points</string>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Home</item>
+        <item>Your Rides</item>
+        <item>Free Rides</item>
+        <item>Add Payment</item>
+        <item>Notifications</item>
+        <item>Ratings &amp; Reviews</item>
+        <item>Promos</item>
+        <item>My Rewards</item>
+        <item>Help</item>
+        <item>Settings</item>
+        <item>Logout</item>
+        <item>Sign up to Drive</item>
+    </string-array>
+
+    <string-array name="CountryCodes">
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="code">Code (optional)</string>
+    <string name="referral_code"> Referral Code(optional)</string>
+    <string name="txt_create">I understand and agree to Arrive5 App Terms of Service and Privacy Policy</string>
+    <string name="set_picture">Set a profile picture</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_reset">Please enter your mobile number to reset your password</string>
+    <string name="new_pass">New Password</string>
+    <string name="confirm_new_pass">Confirm New Password</string>
+    <string name="confirm_pass">Confirm New Password</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_gender">Enter Gender</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_city">Enter City</string>
+    <string name="gender">Gender</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="sign_out">Sign-out</string>
+    <string name="dia_are_you_sure">Are you sure ?</string>
+    <string name="dia_yes">Yes, Exit it!</string>
+    <string name="no">No</string>
+    <string name="upload_vehicle">Upload Vehicle Image</string>
+    <string name="vehicle_info">Vehicle Information</string>
+    <string name="next">Next</string>
+    <string name="driver_info">Driver Information</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="enter_middle_name">Enter Middle Name</string>
+    <string name="ssn">Social Security Number</string>
+    <string name="identification_no">Identification Number</string>
+    <string name="enter_ssn">Enter Social Security Number</string>
+    <string name="dob">Date of Birth</string>
+    <string name="enter_dob">Enter Date of Birth</string>
+    <string name="license_no">Driver\'s License Card Number</string>
+    <string name="enter_lcn">Enter License Card Number</string>
+    <string name="expiry_date">Expiration Date</string>
+    <string name="enter_expiry">Enter Expiration Date</string>
+    <string name="had_more">I have had this license from more than one year</string>
+    <string name="resident_address">Residential Address</string>
+    <string name="use_address"><![CDATA[We use your address to send you your car emblem & driver related suppliea and goodies.]]></string>
+    <string name="address1">Address1</string>
+    <string name="address2">Address2</string>
+    <string name="state">State</string>
+    <string name="enter_state">Enter State</string>
+    <string name="zip">Zip Code</string>
+    <string name="enter_zip_code">Enter Zip Code</string>
+    <string name="add_bank_detail">Add Bank Details</string>
+    <string name="driver_req">Driving Requirements</string>
+    <string name="license_plate">License Plate</string>
+    <string name="enter_license_name">Enter License Plate No</string>
+    <string name="vehicle_reg">Vehicle Registration</string>
+    <string name="enter_regis">Enter Vehicle Registration No</string>
+    <string name="vehicle_type">Vehicle Type</string>
+    <string name="year">Year</string>
+    <string name="model">Model</string>
+    <string name="color">Color</string>
+    <string name="make">Make</string>
+    <string name="doors">No of Doors</string>
+    <string name="belts">Number of Seat Belts</string>
+
+
+    <string name="selectAPlanet">Select Vehicle</string>
+    <string name="vehicle_class">Vehicle Class</string>
+    <string name="have_Arrived">Have you arrived at client\'s location ?</string>
+    <string name="cancel">Cancel</string>
+    <string name="arrive_client">Arrive For Client</string>
+    <string name="rider_info">Rider Info</string>
+    <string name="navigate">Navigate</string>
+    <string name="pickup_loc">Pick Up Location</string>
+    <string name="client_soon">Client Will Arrive Soon</string>
+    <string name="pickup_client">Pick-up Client</string>
+    <string name="drop_off">Drop Off Client</string>
+    <string name="pratek">Prateek Sharma</string>
+    <string name="drop_off_loc">Drop Off Location</string>
+    <string name="otp">Enter OTP</string>
+    <string name="close">Close</string>
+    <string name="did_drop">Did you Drop Off Client</string>
+    <string name="confirm_arival">Confirm Arrival</string>
+    <string name="confirm_drop">Confirm Drop off</string>
+    <string name="billing_detail">Billing Details</string>
+    <string name="rate_passenger">Rate Passenger</string>
+    <string name="total_amt">Total Payable Amount</string>
+    <string name="total_tip">(Total Before Tip)</string>
+    <string name="ride_overview">Ride Overview</string>
+    <string name="prateek">Prateek Jain</string>
+    <string name="why_cancel">Why is trip being cancellled?</string>
+    <string name="back">Back</string>
+    <string name="ride_payment">Ride Payment</string>
+    <string name="from">From - </string>
+    <string name="to">To -</string>
+    <string name="available_pickups">Available Pickups</string>
+    <string name="my_pickups">My Pickups</string>
+    <string name="profile_setting">Profile Settings</string>
+    <string name="business_profile">Business Profile</string>
+    <string name="family_profile">Add Family Profile</string>
+    <string name="change_pass">Change Password</string>
+    <string name="every_ride">Anywhere and Everywhere anytime</string>
+    <string name="notification">Notifications</string>
+    <string name="write_review">Write a review here...</string>
+    <string name="accept">Accept</string>
+    <string name="wave_zone">25-70% Wave Zone</string>
+    <string name="name">Name</string>
+    <string name="user_exists">User Already Exists</string>
+    <string name="optIn">Opt in and we\\\'ll round up your fares to the nearest dollar,than donate the difference to a charitable cause</string>
+    <string name="humanity">Humanity</string>
+    <string name="habitat_humanity">Habitat for humanity</string>
+    <string name="more_info">More Info</string>
+    <string name="stop">Stop</string>
+    <string name="share">Share</string>
+    <string name="different_cause">Selected a different Cause</string>
+    <string name="selected_cause">Selected Cause</string>
+    <string name="donate">Donate</string>
+    <string name="education_welfare">Education and child wellfare</string>
+    <string name="empowering">Empowering child through donating</string>
+    <string name="ongoing">Ongoing</string>
+    <string name="rejected">Rejected</string>
+    <string name="completed">Completed</string>
+    <string name="report_trip">Report Trip</string>
+    <string name="my_trips">My Trips</string>
+    <string name="select_issue">Select an issue</string>
+    <string name="upload_image">Upload item\'s image</string>
+    <string name="remark">Write a remark here...</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="earnings">Earnings</string>
+    <string name="enter_otp">Please enter OTP</string>
+    <string name="invalid_code">Invalid code.</string>
+    <string name="invalid_phone">Invalid phone number.</string>
+    <string-array name="day_selector">
+        <item>Today</item>
+        <item>Weeks</item>
+        <item>Month</item>
+        <item>Overall</item>
+    </string-array>
+
+    <string-array name="planets__entries">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="sendotp_key">224395AcZxiSrJoH5b3de509</string>
+    <string name="rating_reviews"><![CDATA[Ratings & Reviews]]></string>
+    <string name="reviews"><![CDATA[Ratings & Reviews]]></string>
+    <string name="report_issue">Report an issue with this trip</string>
+    <string name="help_center">Help Center</string>
+    <string name="legal">Legal</string>
+    <string name="app_version">App Version</string>
+    <string name="help">Help</string>
+    <string name="fare_review">Fare Review</string>
+    <string name="why_review">Why are you requesting fare review?</string>
+    <string name="scheduled_pickup">Scheduled Pickups</string>
+    <string name="todo">TODO</string>
+    <string name="amount">$ 23.50</string>
+    <string name="seconds">20 Seconds</string>
+    <string name="min">3 Minutes</string>
+    <string name="rating">4.80</string>
+    <string name="carType">Clipper++</string>
+    <string name="title">Title</string>
+    <string name="est_fare">Est. Fare</string>
+    <string name="person_name">Name of Person</string>
+</resources>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <FrameLayout
+                android:id="@+id/profile_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/app_name"
+                    android:background="@color/grey" />
+
+                <ImageView
+                    android:layout_width="@dimen/padding_20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/padding_15dp"
+                    android:layout_marginEnd="@dimen/padding_20dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="UpdateClick"
+                    android:src="@drawable/tick1" />
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_15dp"
+                    android:text="@string/edit_profile"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:layout_width="@dimen/padding_20dp"
+                    android:layout_height="@dimen/padding_20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="BackClick"
+                    android:src="@drawable/back" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layoutTop"
+            android:layout_marginBottom="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp">
+
+            <LinearLayout
+                android:id="@+id/layoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginStart="@dimen/padding_20dp"
+                        android:text="@string/first_name"
+                        android:textColor="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <EditText
+                        android:id="@+id/txtName"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginStart="@dimen/padding_20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/enter_first_name"
+                        android:singleLine="true"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutName"
+                android:layout_gravity="center_vertical"
+                android:background="#F0F8FD" />
+
+            <LinearLayout
+                android:id="@+id/layoutLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_blue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lastname"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginStart="@dimen/padding_20dp"
+                        android:text="@string/last_name"
+                        android:textColor="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <EditText
+                        android:id="@+id/txtLName"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_20dp"
+                        android:layout_marginStart="@dimen/padding_20dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/enter_last_name"
+                        android:singleLine="true"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutLastName"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/home" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/City"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:text="@string/hometown"
+                        android:textColor="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <EditText
+                        android:id="@+id/txtCity"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/enter_home"
+                        android:singleLine="true"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutCity"
+                android:layout_gravity="center_vertical"
+                android:background="#F0F8FD" />
+
+            <LinearLayout
+                android:id="@+id/layoutMusic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/music" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Music"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:text="@string/music"
+                        android:textColor="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <EditText
+                        android:id="@+id/txtMusic"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/enter_music"
+                        android:singleLine="true"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutMusic"
+                android:layout_gravity="center_vertical"
+                android:background="#F0F8FD" />
+
+            <LinearLayout
+                android:id="@+id/layoutAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/user_tick" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/About"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:text="@string/about"
+                        android:textColor="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <EditText
+                        android:id="@+id/txtAbout"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/padding_15dp"
+                        android:layout_marginStart="@dimen/padding_15dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/about_me"
+                        android:maxLines="5"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/overlapImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/user_placeholder" />
+    </RelativeLayout>
+</ScrollView>
+

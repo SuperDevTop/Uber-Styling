@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/notification_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_30dp"
+            android:layout_marginStart="@dimen/padding_30dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/todo"
+            android:onClick="BackClick"
+            android:src="@drawable/back_blue" />
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtPasscode"
+                fontPath="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/insert_code"
+                android:textColor="#2abbe7"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    fontPath="fonts/Poppins-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/otp_sent_to"
+                    android:textColor="#2abbe7"
+                    android:textSize="12sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtPhone"
+                    fontPath="fonts/Poppins-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/mobile"
+                    android:textColor="#2abbe7"
+                    android:textSize="12sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et1"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/et2"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/et3"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/et4"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/et5"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+            <EditText
+                android:id="@+id/et6"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/passcodebottomline"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingBottom="15dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTime"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:text="@string/mobile"
+            android:textColor="#2abbe7"
+            android:textSize="12sp"
+            tools:ignore="MissingPrefix" />
+
+        <RelativeLayout
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/margin_top_25dp"
+            android:layout_marginRight="@dimen/margin_top_25dp"
+            android:layout_marginTop="@dimen/padding_40dp">
+
+            <ImageView
+                android:id="@+id/tv_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/todo"
+                android:gravity="center"
+                android:onClick="ResendClick"
+                android:src="@drawable/group1"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_30dp"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:onClick="NextClick"
+            android:src="@drawable/group3" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

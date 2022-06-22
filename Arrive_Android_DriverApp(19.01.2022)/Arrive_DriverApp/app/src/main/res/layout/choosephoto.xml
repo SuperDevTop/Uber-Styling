@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sltr_dark_white_corner"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtProfile"
+        fontPath="Roboto-Bold.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginLeft="@dimen/padding_20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/set_picture"
+        android:textColor="#4c4c4c"
+        android:textSize="18sp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProfile"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_camera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgCamera"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/todo"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <TextView
+                fontPath="Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCamera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/camera"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imgGAllery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                fontPath="Roboto-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgGAllery"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/gallery"
+                android:textAllCaps="true"
+                tools:ignore="MissingPrefix" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

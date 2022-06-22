@@ -1,0 +1,4 @@
+<resources>
+
+    <dimen name="menu_header_size">40dp</dimen>
+</resources>

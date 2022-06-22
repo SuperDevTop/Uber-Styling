@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context="com.foxy.arrive5.SideMenu.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <FrameLayout
+                android:id="@+id/profile_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/grey"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="@dimen/padding_20dp"
+                    android:layout_height="@dimen/padding_20dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/padding_20dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/edit" />
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_15dp"
+                    android:text="@string/profile"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:layout_width="@dimen/padding_20dp"
+                    android:layout_height="@dimen/padding_20dp"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="BackClick"
+                    android:src="@drawable/back" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/layoutTop"
+            android:layout_marginBottom="@dimen/padding_20dp">
+
+            <TextView
+                android:id="@+id/txtName"
+                fontPath="fonts/Poppins-Medium.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:gravity="center"
+                android:text="@string/john"
+                android:textColor="#1CA8DE"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtName"
+                android:layout_centerHorizontal="true"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="5"
+                android:stepSize="0.5"
+                android:theme="@style/RatingBar" />
+
+            <LinearLayout
+                android:id="@+id/layoutJoined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingBar"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtjoined"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/calendar"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:drawableStart="@drawable/calendar"
+                    android:gravity="center"
+                    android:text="@string/joined"
+                    android:textAllCaps="true"
+                    android:textColor="#B5B3B3"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtmonth"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_5dp"
+                    android:layout_marginStart="@dimen/padding_5dp"
+                    android:gravity="center"
+                    android:text="@string/oct"
+                    android:textAllCaps="true"
+                    android:textColor="#B5B3B3"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLoc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/layoutJoined"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:layout_marginRight="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtCity"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_10dp"
+                        android:layout_marginStart="@dimen/padding_10dp"
+                        android:drawableLeft="@drawable/home"
+                        android:drawablePadding="@dimen/padding_10dp"
+                        android:drawableStart="@drawable/home"
+                        android:hint="@string/enter_home"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/txtmusic"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/padding_10dp"
+                        android:layout_marginStart="@dimen/padding_10dp"
+                        android:drawableLeft="@drawable/music"
+                        android:drawablePadding="@dimen/padding_10dp"
+                        android:drawableStart="@drawable/music"
+                        android:hint="@string/enter_music"
+                        android:singleLine="true"
+                        android:textColor="#1CA8DE"
+                        android:textColorHint="#1CA8DE"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutLoc"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:background="#F0F8FD" />
+
+            <LinearLayout
+                android:id="@+id/layoutHobby"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view1"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtInterest"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:drawableLeft="@drawable/user_tick"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:drawableStart="@drawable/user_tick"
+                    android:gravity="center"
+                    android:text="@string/fun_loving"
+                    android:textColor="#1CA8DE"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/layoutHobby"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:background="#F0F8FD" />
+
+            <LinearLayout
+                android:id="@+id/layoutRewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/reward" />
+
+                <TextView
+                    android:id="@+id/txtReward"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:gravity="center"
+                    android:text="@string/my_points"
+                    android:textAllCaps="true"
+                    android:textColor="#B5B3B3"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTotal"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/layoutRewards"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_marginTop="10dp"
+                android:background="#E4687C"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/total_points"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtTp"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_15dp"
+                    android:layout_marginRight="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutUsed"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/layoutTotal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_marginTop="10dp"
+                android:background="#7BCBBA"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/used_points"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtUp"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_15dp"
+                    android:layout_marginRight="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCancel"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/layoutUsed"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_marginTop="10dp"
+                android:background="#49C4D8"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancel_points"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtCp"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_15dp"
+                    android:layout_marginRight="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutAvail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@id/layoutCancel"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/padding_20dp"
+                android:layout_marginLeft="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_marginTop="10dp"
+                android:background="#F8CE49"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_marginStart="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:text="@string/avail_points"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/txtAp"
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/padding_15dp"
+                    android:layout_marginRight="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/overlapImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:src="@drawable/user_placeholder" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/padding_20dp"
+        android:gravity="center"
+        android:text="@string/seat_need"
+        android:textColor="#2abbe7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/padding_10dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/single_user"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:drawableStart="@drawable/single_user"
+            android:text="@string/passenger" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/group_user"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:drawableStart="@drawable/group_user"
+            android:text="@string/pass" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_10dp"
+        android:text="@string/req_clipper"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="13sp" />
+</LinearLayout>

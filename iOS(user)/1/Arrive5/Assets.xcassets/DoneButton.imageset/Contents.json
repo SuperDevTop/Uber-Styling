@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "iphone",
+      "filename" : "DoneButton-1.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "^D39A06A0EBAAF94F6245494D0978E8C6E911CCB6AD955F8E5A^pimgpsh_fullsize_distr@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "iphone",
+      "filename" : "^D39A06A0EBAAF94F6245494D0978E8C6E911CCB6AD955F8E5A^pimgpsh_fullsize_distr@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

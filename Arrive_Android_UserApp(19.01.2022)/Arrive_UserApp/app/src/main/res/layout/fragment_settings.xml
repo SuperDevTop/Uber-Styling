@@ -1,0 +1,176 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2abbe7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:src="@drawable/user_placeholder" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/john"
+                    android:textColor="@color/blueColor" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@color/blueColor" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:drawableLeft="@drawable/email1"
+                android:drawablePadding="@dimen/padding_20dp"
+                android:drawableStart="@drawable/email1"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text=""
+                android:textColor="@color/blueColor" />
+
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:drawableLeft="@drawable/telephone"
+                android:drawablePadding="@dimen/padding_20dp"
+                android:drawableStart="@drawable/telephone"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text=""
+                android:textColor="@color/blueColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/padding_5dp"
+                android:background="@color/blueColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:paddingEnd="@dimen/padding_20dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingStart="@dimen/padding_20dp"
+                android:text="@string/profile_setting"
+                android:textColor="@color/blueColor"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtBusinessProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:drawableLeft="@drawable/briefcase"
+                android:drawablePadding="@dimen/padding_20dp"
+                android:drawableStart="@drawable/briefcase"
+                android:paddingEnd="@dimen/padding_20dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingStart="@dimen/padding_20dp"
+                android:text="@string/business_profile"
+                android:textColor="@color/blueColor" />
+
+            <TextView
+                android:id="@+id/add_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:paddingEnd="@dimen/padding_20dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingStart="@dimen/padding_20dp"
+                android:text="@string/family_profile"
+                android:textColor="@color/blueColor"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:drawableLeft="@drawable/change_password"
+                android:drawablePadding="@dimen/padding_20dp"
+                android:drawableStart="@drawable/change_password"
+                android:paddingEnd="@dimen/padding_20dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingStart="@dimen/padding_20dp"
+                android:text="@string/change_pass"
+                android:textColor="@color/blueColor"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtEvery_ride"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:drawableLeft="@drawable/everyride"
+                android:drawablePadding="@dimen/padding_20dp"
+                android:drawableStart="@drawable/everyride"
+                android:paddingEnd="@dimen/padding_20dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingStart="@dimen/padding_20dp"
+                android:text="@string/every_ride"
+                android:textColor="@color/blueColor" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logout_button" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_white" />
+
+    </LinearLayout>
+</ScrollView>

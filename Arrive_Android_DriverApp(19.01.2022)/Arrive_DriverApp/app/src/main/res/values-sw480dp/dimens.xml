@@ -1,0 +1,6 @@
+<resources>
+
+    <dimen name="margin_left_30">35dp</dimen>
+    <dimen name="margin_right_30">35dp</dimen>
+    <dimen name="menu_header_size">45dp</dimen>
+</resources>

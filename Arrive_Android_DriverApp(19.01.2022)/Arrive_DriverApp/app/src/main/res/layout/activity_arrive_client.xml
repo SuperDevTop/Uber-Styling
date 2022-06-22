@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/blueColor">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_top_10dp"
+                android:contentDescription="@string/todo"
+                android:gravity="center"
+                android:onClick="BackClick"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutTop"
+            android:background="#0F789F"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/margin_top_10dp"
+                    android:paddingEnd="@dimen/padding_20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingStart="20dp"
+                    android:paddingTop="@dimen/margin_top_10dp"
+                    android:text="@string/client_soon"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="end"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:paddingTop="@dimen/margin_top_10dp"
+                android:text=""
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageRider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutBottom"
+            android:contentDescription="@string/todo"
+            android:onClick="RideClick"
+            android:paddingEnd="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/margin_top_10dp"
+            android:paddingRight="@dimen/padding_10dp"
+            android:paddingStart="@dimen/margin_top_10dp"
+            android:src="@drawable/group_user" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutBottom"
+            android:layout_marginBottom="40dp"
+            android:layout_toEndOf="@id/imageRider"
+            android:layout_toRightOf="@id/imageRider"
+            android:background="@drawable/bubble"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_top_10dp"
+            android:paddingRight="@dimen/margin_top_10dp"
+            android:text="@string/rider_info" />
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blueColor">
+
+            <Button
+                android:id="@+id/arrive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/pickup_client_button"
+                android:gravity="center"
+                android:onClick="OTPClick" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

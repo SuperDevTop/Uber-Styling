@@ -1,0 +1,6 @@
+framework module SendOTPFramework {
+  umbrella header "SendOTPFramework.h"
+
+  export *
+  module * { export * }
+}

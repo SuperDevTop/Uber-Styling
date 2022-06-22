@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_30dp"
+        android:layout_marginStart="@dimen/padding_30dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="BackClick"
+        android:src="@drawable/back_blue" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/shape1"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:drawableStart="@drawable/shape1"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/code"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center"
+            android:hint="@string/code"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:textColor="#2abbe7"
+            android:textColorHint="#2abbe7"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <CheckBox
+            android:id="@+id/simpleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:buttonTint="#2abbe7"
+            android:text="@string/txt_create"
+            android:textColor="#2abbe7"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="NextClick"
+            android:src="@drawable/signup" />
+    </LinearLayout>
+</LinearLayout>

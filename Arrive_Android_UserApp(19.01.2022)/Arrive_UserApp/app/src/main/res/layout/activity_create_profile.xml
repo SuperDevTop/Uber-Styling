@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:fillViewport="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.foxy.arrive5.IntroScreens.CreateProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/notification_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_30dp"
+            android:layout_marginStart="@dimen/padding_30dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="BackClick"
+            android:src="@drawable/back_blue" />
+
+        <FrameLayout
+            android:id="@+id/profile_image_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding_20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_placeholder" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/padding_30dp"
+                android:layout_height="@dimen/padding_30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/camera" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableLeft="@drawable/user_blue"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:drawableStart="@drawable/user_blue"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/first_name"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtFName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:gravity="center"
+                    android:hint="@string/first_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableLeft="@drawable/user_blue"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:drawableStart="@drawable/user_blue"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/last_name"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtLName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:gravity="center"
+                    android:hint="@string/last_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_5dp"
+                    android:paddingBottom="@dimen/padding_5dp"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginBottom="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/group3" />
+    </LinearLayout>
+</ScrollView>

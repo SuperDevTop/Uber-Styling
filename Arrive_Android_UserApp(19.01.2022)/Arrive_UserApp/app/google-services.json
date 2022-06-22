@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "159082802683",
+    "firebase_url": "https://arrive5.firebaseio.com",
+    "project_id": "arrive5",
+    "storage_bucket": "arrive5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159082802683:android:3d488d1c4e990b16",
+        "android_client_info": {
+          "package_name": "com.foxy.arrive5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159082802683-72t5gjaee2dlp1bc34fi89irbmj8b2lh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.foxy.arrive5",
+            "certificate_hash": "71f9c7b749f1f8c0106eefe8da78ab9457b4c4d8"
+          }
+        },
+        {
+          "client_id": "159082802683-dg4uog5f2ulflu2vcnu7muk0eu14co1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdy-Tk3FZblX9qu0o7R2dUA--knniPqAg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159082802683-dg4uog5f2ulflu2vcnu7muk0eu14co1k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/notification_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_30dp"
+            android:layout_marginLeft="@dimen/padding_30dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/todo"
+            android:onClick="BackClick"
+            android:src="@drawable/back_blue" />
+
+        <FrameLayout
+            android:id="@+id/profile_image_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding_20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user_placeholder" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/padding_30dp"
+                android:layout_height="@dimen/padding_30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/camera" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/user_blue"
+                android:drawableLeft="@drawable/user_blue"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/first_name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:hint="@string/enter_first_name"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/user_blue"
+                android:drawableLeft="@drawable/user_blue"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/last_name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:hint="@string/enter_last_name"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/email1"
+            android:drawableLeft="@drawable/email1"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/email"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/mobile"
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/mobile"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:orientation="horizontal">
+
+            <com.rilixtech.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/intro_background"
+                android:gravity="center"
+                android:padding="@dimen/padding_10dp"
+                app:ccp_defaultCode="81"
+                app:ccp_hideNameCode="true"
+                app:ccp_textColor="@color/galleryItemOverlay" />
+
+            <EditText
+                android:id="@+id/txtMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="@string/mobile"
+                android:inputType="none"
+                android:padding="@dimen/padding_15dp"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/password"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_pass"
+            android:inputType="textPassword"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/confirm_password"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_pass"
+            android:inputType="textPassword"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/txtGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/gender"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/password"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/country"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <com.rilixtech.CountryCodePicker
+            android:id="@+id/ccp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:layout_marginStart="@dimen/padding_20dp"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:background="@drawable/intro_background"
+            android:padding="@dimen/padding_10dp"
+            app:ccp_defaultCode="91"
+            app:ccp_hideNameCode="false"
+            app:ccp_hidePhoneCode="true"
+            app:ccp_showFlag="true"
+            app:ccp_showFullName="true"
+            app:ccp_textColor="@color/galleryItemOverlay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/shape1"
+            android:drawableLeft="@drawable/shape1"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/city"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_city"
+            android:padding="@dimen/padding_10dp"
+            android:textColor="@color/galleryItemOverlay"
+            android:singleLine="true"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/shape1"
+            android:drawableLeft="@drawable/shape1"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/code"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/referral_code"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <CheckBox
+            android:id="@+id/simpleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:buttonTint="#2abbe7"
+            android:text="@string/txt_create"
+            android:textColor="@color/galleryItemOverlay"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:id="@+id/imgSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginBottom="@dimen/padding_20dp"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/signup" />
+    </LinearLayout>
+</ScrollView>

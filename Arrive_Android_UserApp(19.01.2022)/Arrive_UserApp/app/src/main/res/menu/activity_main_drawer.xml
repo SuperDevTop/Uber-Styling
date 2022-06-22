@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_your_rides"
+            android:icon="@drawable/your_rides"
+            android:title="Your Rides" />
+        <item
+            android:id="@+id/nav_free_rides"
+            android:icon="@drawable/menu_free_rides"
+            android:title="Free Rides" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/add_payment"
+            android:title="Add Payment"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_notify"
+            android:icon="@drawable/menu_notification"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/nav_ratings"
+            android:icon="@drawable/rating"
+            android:title="Ratings and Reviews" />
+        <item
+            android:id="@+id/nav_promo"
+            android:icon="@drawable/promos"
+            android:visible="false"
+            android:title="Promos" />
+        <item
+            android:id="@+id/nav_rewards"
+            android:icon="@drawable/my_reward"
+            android:visible="false"
+            android:title="My Rewards" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+        <item
+            android:id="@+id/nav_sign_up_driver"
+            android:icon="@drawable/signup_to_driver"
+            android:title="Sign up to Drive" />
+    </group>
+</menu>

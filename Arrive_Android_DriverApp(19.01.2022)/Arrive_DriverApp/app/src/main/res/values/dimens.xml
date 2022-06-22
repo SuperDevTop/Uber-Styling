@@ -1,0 +1,58 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="stroke_size">3dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+    <integer name="anim_duration_long">500</integer>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="margin_top_15dp">15dp</dimen>
+    <dimen name="margin_top_25dp">25dp</dimen>
+    <dimen name="margin_top_10dp">10dp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="padding_30dp">30dp</dimen>
+    <dimen name="padding_40dp">40dp</dimen>
+    <dimen name="padding_50dp">50dp</dimen>
+    <dimen name="margin_top_40dp">40dp</dimen>
+    <dimen name="margin_top_40">40dp</dimen>
+    <dimen name="padding_5dp">5dp</dimen>
+    <dimen name="padding_15dp">15dp</dimen>
+    <dimen name="skip_width">50dp</dimen>
+    <dimen name="skip_height">25dp</dimen>
+    <integer name="angle_rtl_180">180</integer>
+    <dimen name="nav_header_vertical_spacing">46dp</dimen>
+    <dimen name="app_camera_height">250dp</dimen>
+
+    <dimen name="bottom_height">150dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="profile_width">100dp</dimen>
+    <dimen name="profile_height">100dp</dimen>
+    <dimen name="padding_tiny">2dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_large">10dp</dimen>
+    <dimen name="padding_xlarge">16dp</dimen>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_medium">15dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="checkout_button_width">300dp</dimen>
+    <dimen name="element_space">15dp</dimen>
+    <dimen name="separator_width">1dp</dimen>
+    <dimen name="margin_top_5dp">5dp</dimen>
+    <dimen name="dimen_80dp">80dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_60dp">60dp</dimen>
+    <dimen name="dimen_70dp">70dp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+</resources>

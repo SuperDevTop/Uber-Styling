@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="?actionBarItemBackground"
+                android:contentDescription="@string/todo"
+                android:onClick="BackClick"
+                android:padding="13dp"
+                android:src="@drawable/back_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/vehicle_info"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#2abbe7" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/profile_image_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/padding_20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/placeholder" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/padding_30dp"
+                android:layout_height="@dimen/padding_30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="@dimen/padding_40dp"
+                android:src="@drawable/camera" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/upload_vehicle"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <HorizontalScrollView
+            android:id="@+id/hori_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="false"
+            android:foregroundGravity="left">
+
+            <LinearLayout
+                android:id="@+id/selected_photos_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:animateLayoutChanges="true"
+                android:gravity="start"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <!-- images will be added dynamicall to this layout -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/vehicle_info"
+            android:textColor="#2abbe7" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:drawableStart="@drawable/car_blue"
+            android:drawableLeft="@drawable/car_blue"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/vehicle_class"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_vehicle_class"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:drawableStart="@drawable/car_blue"
+            android:drawableLeft="@drawable/car_blue"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/vehicle_type"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_vehicle_type"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/year"
+            android:drawableLeft="@drawable/year"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/year"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_year"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/gear"
+            android:drawableLeft="@drawable/gear"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/make"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_make"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/car_blue"
+            android:drawableLeft="@drawable/car_blue"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/model"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_model"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/painter_palette"
+            android:drawableLeft="@drawable/painter_palette"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/color"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_color"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/door"
+            android:drawableLeft="@drawable/door"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/doors"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_no_of_doors"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:drawableStart="@drawable/seat"
+            android:drawableLeft="@drawable/seat"
+            android:drawablePadding="@dimen/padding_20dp"
+            android:paddingStart="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingEnd="@dimen/padding_20dp"
+            android:text="@string/belts"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_no_belts"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/blueColor"
+                tools:targetApi="lollipop" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_30dp"
+            android:contentDescription="@string/todo"
+            android:gravity="center"
+            android:onClick="DriverInfoClick"
+            android:paddingBottom="@dimen/padding_20dp"
+            android:src="@drawable/group3" />
+
+        <include layout="@layout/layout_progress" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_trip_row_user_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_top_5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my_trip_row_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Name of Person"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/pickup_dot_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_5dp"
+                    android:text="@string/from"
+                    android:textColor="@color/blackColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/my_trip_row_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/loc" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_5dp"
+                    android:text="@string/to"
+                    android:textColor="@color/blackColor"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/my_trip_row_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/ongoing_button"
+                    android:gravity="center"
+                    android:text="@string/ongoing"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/padding_5dp"
+                    android:background="@drawable/rejected_button"
+                    android:gravity="center"
+                    android:text="@string/rejected"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/padding_5dp"
+                    android:background="@drawable/completed_button"
+                    android:gravity="center"
+                    android:text="@string/completed"
+                    android:textAllCaps="false"
+                    android:textColor="@color/whiteColor" />
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="90dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="@dimen/padding_5dp"
+                    android:background="@drawable/report_button"
+                    android:gravity="center"
+                    android:text="@string/report_trip"
+                    android:textAllCaps="false"
+                    android:textColor="#FF7266" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

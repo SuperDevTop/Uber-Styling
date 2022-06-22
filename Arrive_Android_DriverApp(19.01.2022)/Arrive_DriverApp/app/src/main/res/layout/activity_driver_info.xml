@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/padding_30dp"
+                android:layout_marginLeft="@dimen/padding_30dp"
+                android:contentDescription="@string/todo"
+                android:onClick="BackClick"
+                android:src="@drawable/back_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/driver_info"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#2abbe7" />
+
+            <ImageView
+                android:id="@+id/imgTick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padding_30dp"
+                android:layout_marginRight="@dimen/padding_30dp"
+                android:contentDescription="@string/todo"
+                android:onClick="BackClick"
+                android:src="@drawable/back"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_20dp"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/placeholder" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/user_blue"
+                android:drawableLeft="@drawable/user_blue"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/first_name"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtFName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:focusableInTouchMode="false"
+                android:hint="@string/enter_first_name"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/user_blue"
+                android:drawableLeft="@drawable/user_blue"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/middle_name"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtMName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:hint="@string/enter_middle_name"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/user_blue"
+                android:drawableLeft="@drawable/user_blue"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/last_name"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtLName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:focusableInTouchMode="false"
+                android:hint="@string/enter_last_name"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/loc"
+                android:drawableLeft="@drawable/loc"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/country"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <TextView
+                android:id="@+id/ccpCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/galleryItemOverlay" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/ssn"
+                android:drawableLeft="@drawable/ssn"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/ssn"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtSsn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:hint="@string/enter_ssn"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableStart="@drawable/ssn"
+                android:drawableLeft="@drawable/ssn"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/identification_no"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <EditText
+                android:id="@+id/txtIdentification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_10dp"
+                android:background="@drawable/intro_background"
+                android:hint="Enter Identification Number"
+                android:padding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:textColor="@color/galleryItemOverlay"
+                android:textColorHint="@color/galleryItemOverlay"
+                android:textSize="12sp"
+                tools:targetApi="lollipop" />
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/dob1"
+                    android:drawableLeft="@drawable/dob1"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/dob"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/Birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/enter_dob"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/license"
+                    android:drawableLeft="@drawable/license"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/license_no"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtlcn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:hint="@string/enter_lcn"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/dob1"
+                    android:drawableLeft="@drawable/dob1"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/expiry_date"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/expiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="@string/enter_expiry"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <CheckBox
+                    android:id="@+id/simpleCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:buttonTint="#2abbe7"
+                    android:paddingLeft="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:text="@string/had_more"
+                    android:textColor="@color/galleryItemOverlay" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:background="#2abbe7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/residnet"
+                    android:drawableLeft="@drawable/residnet"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/resident_address"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/use_address"
+                    android:textAllCaps="false"
+                    android:textColor="@color/galleryItemOverlay" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/loc"
+                    android:drawableLeft="@drawable/loc"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/address1"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:hint="@string/enter_address"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="#2abbe7"
+                    android:textColorHint="#2abbe7"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/loc"
+                    android:drawableLeft="@drawable/loc"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/address2"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:hint="@string/enter_address"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/city1"
+                    android:drawableLeft="@drawable/city1"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/city"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/enter_city"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/state1"
+                    android:drawableLeft="@drawable/state1"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/state"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:hint="@string/enter_state"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:drawableStart="@drawable/zip1"
+                    android:drawableLeft="@drawable/zip1"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:text="@string/zip"
+                    android:textAllCaps="true"
+                    android:textColor="#2abbe7" />
+
+                <EditText
+                    android:id="@+id/txtZip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:hint="@string/enter_zip_code"
+                    android:inputType="number"
+                    android:padding="@dimen/padding_10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="12sp"
+                    tools:targetApi="lollipop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:layout_marginTop="@dimen/padding_20dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:background="#FFA500"
+                    android:drawableStart="@drawable/state"
+                    android:drawableLeft="@drawable/state"
+                    android:drawableEnd="@drawable/add_icon"
+                    android:drawableRight="@drawable/add_icon"
+                    android:drawablePadding="@dimen/padding_10dp"
+                    android:paddingStart="@dimen/padding_20dp"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:paddingEnd="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_10dp"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:text="@string/add_bank_detail"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tv_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/padding_30dp"
+                    android:contentDescription="@string/todo"
+                    android:gravity="center"
+                    android:onClick="RequirementClick"
+                    android:src="@drawable/group3" />
+
+            <include layout="@layout/layout_progress" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

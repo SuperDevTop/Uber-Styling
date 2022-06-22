@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_50dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="13dp"
+                android:background="?actionBarItemBackground"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:onClick="BackClick"
+                android:src="@drawable/back_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/driver_req"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#2abbe7" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtInsurance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginRight="@dimen/padding_20dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:drawableStart="@drawable/insurance"
+            android:drawableLeft="@drawable/insurance"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:text=""
+            android:hint="Insurance Image"
+            android:textAllCaps="false"
+            android:textColor="@color/blueColor" />
+
+        <TextView
+            android:id="@+id/txtLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginRight="@dimen/padding_20dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:drawableStart="@drawable/license"
+            android:drawableLeft="@drawable/license"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:text=""
+            android:hint="License Image"
+            android:textAllCaps="false"
+            android:textColor="@color/blueColor" />
+
+        <TextView
+            android:id="@+id/txtAadharPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginRight="@dimen/padding_20dp"
+            android:visibility="gone"
+            android:background="@drawable/rounded_corner_blue"
+            android:drawableStart="@drawable/driver_photo"
+            android:drawableLeft="@drawable/driver_photo"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:text=""
+            android:hint="Aadhar Image"
+            android:textAllCaps="false"
+            android:textColor="@color/blueColor" />
+
+        <TextView
+            android:id="@+id/txtVehicleIns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginRight="@dimen/padding_20dp"
+            android:background="@drawable/rounded_corner_blue"
+            android:drawableStart="@drawable/vehicle_inspection"
+            android:drawableLeft="@drawable/vehicle_inspection"
+            android:drawablePadding="@dimen/padding_10dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:hint="Vehicle Image"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/blueColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/license_plate"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtLicNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_license_name"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:paddingLeft="@dimen/padding_20dp"
+            android:paddingRight="@dimen/padding_20dp"
+            android:text="@string/vehicle_reg"
+            android:textAllCaps="true"
+            android:textColor="#2abbe7" />
+
+        <EditText
+            android:id="@+id/txtVehReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_10dp"
+            android:background="@drawable/intro_background"
+            android:hint="@string/enter_regis"
+            android:padding="@dimen/padding_10dp"
+            android:singleLine="true"
+            android:textColor="@color/galleryItemOverlay"
+            android:textColorHint="@color/galleryItemOverlay"
+            android:textSize="12sp"
+            tools:targetApi="lollipop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:onClick="SubmitClick"
+            android:src="@drawable/submit_blue" />
+
+        <include layout="@layout/layout_progress" />
+
+    </LinearLayout>
+</ScrollView>

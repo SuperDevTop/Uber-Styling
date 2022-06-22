@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:minWidth="400dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_20dp">
+
+    <ImageView
+        android:id="@+id/imgCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contentDescription="@string/todo"
+        android:onClick="BackClick"
+        android:padding="@dimen/padding_20dp"
+        android:src="@drawable/cross_grey" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/user_placeholder" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:paddingTop="@dimen/padding_20dp"
+        android:text="@string/have_Arrived"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/arrive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/confirm_arrival_button"
+        android:gravity="center"
+        android:onClick="ArriveClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_top_10dp"
+        android:gravity="center"
+        android:onClick="CancelClick"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="#F9992D"
+        android:textSize="15sp" />
+</LinearLayout>

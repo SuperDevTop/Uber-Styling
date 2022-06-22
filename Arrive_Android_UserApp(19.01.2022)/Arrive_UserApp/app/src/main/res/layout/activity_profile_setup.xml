@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueColor"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_10dp"
+                    android:layout_marginStart="@dimen/padding_10dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="BackClick"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/profile_setup"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_5dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:gravity="center"
+                    android:text="@string/business_receipt"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_top_15dp"
+                    android:layout_marginRight="@dimen/margin_top_15dp"
+                    android:gravity="center"
+                    android:text="@string/get_trip"
+                    android:textAlignment="center"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_15dp"
+                android:layout_marginStart="@dimen/margin_top_15dp"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:drawableLeft="@drawable/mobile_whtie"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:drawableStart="@drawable/mobile_whtie"
+                android:text="@string/work_email"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <EditText
+                    android:id="@+id/txtBusinessEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_top_15dp"
+                    android:layout_marginStart="@dimen/margin_top_15dp"
+                    android:layout_toEndOf="@id/ccp"
+                    android:layout_toRightOf="@id/ccp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="@string/enter_work_email"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/whiteColor"
+                    android:textColorHint="@color/whiteColor"
+                    tools:targetApi="lollipop" />
+
+                <ImageView
+                    android:id="@+id/imgCross"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="@dimen/padding_20dp"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/cross_white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_top_15dp"
+            android:layout_marginStart="@dimen/margin_top_15dp"
+            android:text="@string/email_private"
+            android:textColor="@color/whiteColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="PaymentClick"
+            android:src="@drawable/send" />
+    </LinearLayout>
+</ScrollView>

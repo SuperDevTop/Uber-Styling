@@ -1,0 +1,6 @@
+framework module Pods_Arrive5Driver {
+  umbrella header "Pods-Arrive5Driver-umbrella.h"
+
+  export *
+  module * { export * }
+}

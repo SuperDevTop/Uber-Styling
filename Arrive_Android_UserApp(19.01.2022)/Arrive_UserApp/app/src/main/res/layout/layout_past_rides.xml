@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/past_ride"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/padding_10dp"
+    android:layout_marginTop="@dimen/padding_5dp"
+    android:layout_marginRight="@dimen/padding_10dp"
+    android:layout_marginBottom="@dimen/padding_5dp"
+    android:background="@drawable/edit_text_background"
+    android:elevation="@dimen/padding_5dp"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_10dp"
+    tools:targetApi="lollipop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_10dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:paddingRight="@dimen/padding_10dp">
+
+        <TextView
+            android:id="@+id/booking_date"
+            fontPath="fonts/Poppins-Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/galleryItemOverlay"
+            tools:ignore="MissingPrefix" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/past_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/past_ride_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:src="@drawable/user_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/padding_10dp"
+                android:layout_marginLeft="@dimen/padding_10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/past_ride_name"
+                    fontPath="fonts/Poppins-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/blueColor"
+                    android:textSize="14sp"
+                    tools:ignore="MissingPrefix" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/booking_car_type"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/grey"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/booking_car_no"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_5dp"
+                android:layout_marginLeft="@dimen/padding_5dp"
+                android:text=""
+                android:textColor="@color/grey"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/booking_amount"
+        fontPath="fonts/Poppins-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/amount"
+        android:textColor="@color/grey"
+        tools:ignore="MissingPrefix" />
+
+    <TextView
+        android:id="@+id/txtTip"
+        fontPath="fonts/Poppins-Regular.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/blueColor"
+        android:textSize="12sp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/past_pickup_add"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/location_green"
+                android:drawableLeft="@drawable/location_green"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/blueColor"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/past_drop_add"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:layout_weight="1"
+                android:drawableStart="@drawable/location_orange"
+                android:drawableLeft="@drawable/location_orange"
+                android:drawablePadding="@dimen/padding_15dp"
+                android:singleLine="true"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/blueColor"
+                android:textSize="12sp"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/txtStatus"
+                fontPath="fonts/Poppins-Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/blueColor"
+                android:textSize="12sp"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/margin_top_25dp"
+        android:layout_marginRight="@dimen/padding_10dp"
+        android:scaleType="fitXY" />
+</LinearLayout>

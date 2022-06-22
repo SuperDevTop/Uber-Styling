@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobi.arrive5d">
+
+    <permission
+        android:name="com.mobi.arrive.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.project.arrive.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application
+        android:name=".utils.ApplicationController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="sendotp.key"
+            android:value="@string/sendotp_key" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e9f068d156660a4b73b842925013bd2b3e685402" />
+        <activity android:name=".IntroScreens.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".API.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".API.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- <activity -->
+        <!-- android:name="com.gun0912.tedpicker.ImagePickerActivity" -->
+        <!-- android:screenOrientation="portrait" /> -->
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBFow_dKA2BtDpWV6I9exQLfjG6ssO1B3A" />
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.1.0" />
+
+        <activity
+            android:name=".IntroScreens.LoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity">
+
+            <!--
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            -->
+        </activity>
+        <activity android:name=".IntroScreens.SignupActivity" />
+        <activity android:name=".IntroScreens.ForgotPasswordActivity" />
+        <activity android:name=".IntroScreens.OTPActivity" />
+        <activity android:name=".IntroScreens.CreateProfileActivity" />
+        <activity android:name=".IntroScreens.ResetPasswordActivity" />
+        <activity android:name=".SideMenu.ProfileActivity" />
+        <activity
+            android:name=".IntroScreens.VehicleInfoActivity"
+            android:theme="@style/VehicleInfoTheme">
+
+        <!--  <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+        </activity>
+        <activity android:name=".IntroScreens.DriverInfoActivity" />
+        <activity android:name=".IntroScreens.DrivingRequirementsActivity" />
+        <activity
+            android:name=".SideMenu.BookingDialogActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".SideMenu.StartNavigationActivity" />
+        <activity
+            android:name=".SideMenu.ConfirmArrivalActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.UserDialog" />
+        <activity android:name=".SideMenu.ArriveClientActivity" />
+        <activity
+            android:name=".SideMenu.DropOffOTPActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.UserDialog" />
+        <activity android:name=".SideMenu.BilllingDetailsActivity" />
+        <activity android:name=".SideMenu.RideOverViewActivity" />
+        <activity
+            android:name=".SideMenu.CancelRideActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.AppCompat.UserDialog" />
+        <activity android:name=".SideMenu.EveryRideActivity" />
+        <activity android:name=".SelectIssueActivity" />
+        <activity android:name=".SideMenu.FareReviewActivity" />
+        <activity android:name=".IntroScreens.PolicyActivity" />
+    </application>
+
+</manifest>

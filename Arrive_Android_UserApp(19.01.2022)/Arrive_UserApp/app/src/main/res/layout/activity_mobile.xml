@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/padding_30dp"
+        android:layout_marginLeft="@dimen/padding_30dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="BackClick"
+        android:src="@drawable/back_blue" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mobile" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mobile"
+                android:drawableLeft="@drawable/mobile"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:paddingLeft="@dimen/padding_20dp"
+                android:paddingRight="@dimen/padding_20dp"
+                android:text="@string/mobile"
+                android:textAllCaps="true"
+                android:textColor="#2abbe7" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.rilixtech.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10dp"
+                    android:visibility="gone"
+                    app:ccp_defaultCode="91"
+                    app:ccp_hideNameCode="true" />
+
+                <EditText
+                    android:id="@+id/txtMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_10dp"
+                    android:background="@drawable/intro_background"
+                    android:clickable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center"
+                    android:hint="@string/mobile"
+                    android:inputType="none"
+                    android:paddingLeft="@dimen/padding_20dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:paddingRight="@dimen/padding_20dp"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:textColor="@color/galleryItemOverlay"
+                    android:textColorHint="@color/galleryItemOverlay"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:targetApi="lollipop" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:layout_marginBottom="@dimen/padding_20dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="NextClick"
+                android:src="@drawable/group3" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

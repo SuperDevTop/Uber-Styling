@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "630665883798",
+    "firebase_url": "https://arrive5-driver.firebaseio.com",
+    "project_id": "arrive5-driver",
+    "storage_bucket": "arrive5-driver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630665883798:android:b6d60af38a5cb122",
+        "android_client_info": {
+          "package_name": "com.mobi.arrive5d"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630665883798-5fc6q23svmgs0j18nauqka1v2cjtrmms.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobi.arrive5d",
+            "certificate_hash": "71f9c7b749f1f8c0106eefe8da78ab9457b4c4d8"
+          }
+        },
+        {
+          "client_id": "630665883798-2vltb3cv1k8hg9sib2qqleuhl6tag3mp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmytJPxYfnV6IbUw0yACTAAr-O7E0Xdsk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630665883798-2vltb3cv1k8hg9sib2qqleuhl6tag3mp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

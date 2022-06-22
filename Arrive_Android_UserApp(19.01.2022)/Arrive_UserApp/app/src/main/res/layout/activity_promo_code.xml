@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_10dp">
+
+        <ImageView
+            android:layout_width="@dimen/padding_20dp"
+            android:layout_height="@dimen/padding_20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:layout_marginStart="@dimen/padding_20dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="BackClick"
+            android:src="@drawable/back" />
+
+        <TextView
+            fontPath="fonts/Poppins-Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/promo_code"
+            android:textColor="@color/whiteColor"
+            android:textSize="20sp"
+            tools:ignore="MissingPrefix" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_promo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_15dp" />
+</LinearLayout>

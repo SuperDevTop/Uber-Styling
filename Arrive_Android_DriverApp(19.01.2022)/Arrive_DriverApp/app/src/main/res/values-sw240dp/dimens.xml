@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="margin_left_30">20dp</dimen>
+    <dimen name="margin_right_30">20dp</dimen>
+
+
+</resources>

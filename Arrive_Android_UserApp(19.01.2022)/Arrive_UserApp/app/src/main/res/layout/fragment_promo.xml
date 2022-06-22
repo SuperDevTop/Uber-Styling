@@ -1,0 +1,134 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2abbe7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/hand_percentage1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center"
+                android:paddingLeft="@dimen/padding_30dp"
+                android:paddingRight="@dimen/padding_30dp"
+                android:text="@string/add_view"
+                android:textColor="#828383" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center"
+                android:text="@string/promo"
+                android:textAllCaps="true"
+                android:textColor="@color/blueColor" />
+
+            <EditText
+                android:id="@+id/etPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center"
+                android:hint="@string/enter_promo"
+                android:singleLine="true"
+                android:textColor="#2abbe7"
+                android:textColorHint="#2abbe7"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="#E4687C"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/gift"
+                    android:drawablePadding="@dimen/padding_20dp"
+                    android:text="@string/gift_friend"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="right"
+                    android:src="@drawable/next_blue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="#F8CE49"
+                android:gravity="center">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/padding_15dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/gift"
+                    android:drawablePadding="@dimen/padding_20dp"
+                    android:text="@string/free_rides"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:gravity="right"
+                    android:src="@drawable/next_blue" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:contentDescription="@string/app_name"
+                android:gravity="right"
+                android:src="@drawable/submit" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

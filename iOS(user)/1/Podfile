@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Arrive5' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Arrive5
+
+pod 'IQKeyboardManagerSwift'
+  pod 'MRCountryPicker', '~> 0.0.7'
+  pod 'Firebase/Auth','~> 4.0’
+    pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'SVProgressHUD'
+  pod 'sd', '~> 4.0'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+
+  # Alamofire
+ # pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON'
+  
+  pod 'Stripe', '~> 21.4'
+  pod 'CreditCardForm', :git => 'https://github.com/orazz/CreditCardForm-iOS', branch: 'master'
+  # Crashlytics
+  pod 'Firebase/Analytics'
+  
+  # Add the pod for Firebase Cloud Messaging
+  pod 'Firebase/Messaging'
+ 
+
+  
+  # GoogleMaps
+  
+  pod 'Alamofire', '~> 4.7'
+#    pod 'GoogleMaps', '~> 3.0.2'
+#    pod 'GooglePlaces', '~> 3.0.2'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+end

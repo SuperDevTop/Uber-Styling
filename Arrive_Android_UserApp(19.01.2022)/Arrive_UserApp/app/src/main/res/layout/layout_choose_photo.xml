@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corner"
+    android:backgroundTint="@color/whiteColor"
+    android:padding="@dimen/padding_10dp"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/add_img"
+        fontPath="fonts/Poppins-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_picture"
+        android:textSize="15sp"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_img"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/camera_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20dp">
+
+            <TextView
+                fontPath="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:drawableTop="@drawable/camera_1"
+                android:text="@string/camera"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gallery_ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_20dp">
+
+            <TextView
+                fontPath="fonts/Poppins-Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/padding_10dp"
+                android:drawableTop="@drawable/gallery"
+                android:text="@string/gallery"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

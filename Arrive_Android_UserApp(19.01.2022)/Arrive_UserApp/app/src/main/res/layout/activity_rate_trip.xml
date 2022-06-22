@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/padding_20dp"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/blueColor">
+
+                <TextView
+                    fontPath="fonts/Poppins-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/padding_10dp"
+                    android:text="@string/rate_trip"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    tools:ignore="MissingPrefix" />
+
+                <ImageView
+                    android:layout_width="@dimen/padding_20dp"
+                    android:layout_height="@dimen/padding_20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/padding_20dp"
+                    android:layout_marginLeft="@dimen/padding_20dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="BackClick"
+                    android:src="@drawable/back" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:id="@+id/profile_image_frame"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@id/layoutHeader"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/profile_header" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutTop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:layout_marginBottom="@dimen/padding_20dp">
+
+            <TextView
+                android:id="@+id/txtRate"
+                fontPath="fonts/Poppins-Medium.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center"
+                android:text="@string/rate_with"
+                android:textColor="#1CA8DE"
+                android:textSize="20sp"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:id="@+id/layoutRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtRate"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:rating="1"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutRating"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:layout_centerVertical="true"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/relRatingCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recyclerView"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+
+                    <TextView
+                        android:id="@+id/txtDriving"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Driving"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:id="@+id/txtProfsnal"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Rush"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+
+                    <TextView
+                        android:id="@+id/txtCarSmell"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Car smell"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:id="@+id/txtMusic"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Music"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+
+                    <TextView
+                        android:id="@+id/txtTraffic"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Traffic"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:id="@+id/txtConversation"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Conversation"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+
+                    <TextView
+                        android:id="@+id/txtNavigation"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Driver Nav"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                    <TextView
+                        android:id="@+id/txtCleanlines"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Cleanlines"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:id="@+id/txtOther"
+                        fontPath="fonts/Poppins-Medium.ttf"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rating_comments_show"
+                        android:gravity="center"
+                        android:text="Other"
+                        android:textColor="#888"
+                        android:textSize="15sp"
+                        tools:ignore="MissingPrefix" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/rating_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relRatingCat"
+                android:layout_marginLeft="@dimen/padding_15dp"
+                android:layout_marginTop="@dimen/padding_15dp"
+                android:layout_marginRight="@dimen/padding_15dp"
+                android:visibility="gone"
+                android:background="@drawable/rating_comments_show"
+                android:gravity="top|start"
+                android:hint="@string/write_review"
+                android:lines="3"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/blackColor" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rating_comment"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/padding_20dp"
+                android:contentDescription="@string/app_name"
+                android:onClick="SubmitClick"
+                android:src="@drawable/submit" />
+
+        </RelativeLayout>
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imgUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@id/layoutBottom"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/user_placeholder" />
+    </RelativeLayout>
+</ScrollView>
+

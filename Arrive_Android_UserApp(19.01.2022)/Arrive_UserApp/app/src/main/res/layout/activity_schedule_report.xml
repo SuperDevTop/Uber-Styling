@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueColor"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blueColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/back"
+                android:drawableStart="@drawable/back"
+                android:gravity="center"
+                android:text="@string/profile_setup"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/padding_10dp"
+                android:gravity="center"
+                android:text="@string/schedule_reports"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/margin_top_15dp"
+                android:layout_marginRight="@dimen/margin_top_15dp"
+                android:gravity="center"
+                android:text="@string/choose_summary"
+                android:textAlignment="center"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/padding_20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:text="@string/weekly"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/weeklySwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_weight=".1"
+                app:sb_enable_effect="false"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:text="@string/monthly"
+                android:textColor="@color/whiteColor"
+                android:textSize="20sp" />
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/monthlySwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/padding_20dp"
+                android:layout_marginRight="@dimen/padding_20dp"
+                android:layout_weight=".1"
+                app:sb_enable_effect="false"
+                app:sb_show_indicator="false" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/app_name"
+            android:onClick="ScheduleReportClick"
+            android:src="@drawable/next" />
+    </LinearLayout>
+</ScrollView>

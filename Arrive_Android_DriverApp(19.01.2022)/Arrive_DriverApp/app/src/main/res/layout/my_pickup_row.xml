@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/profile_image_frame"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="center">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:liteMode="true"
+            app:mapType="normal" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_top_10dp"
+        android:layout_marginStart="@dimen/margin_top_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/my_pickup_row_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/scheduled_pickup"
+            android:drawablePadding="@dimen/padding_5dp"
+            android:drawableStart="@drawable/scheduled_pickup"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/blackColor" />
+
+        <TextView
+            android:id="@+id/my_pickup_row_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pickup_dot_icon"
+            android:drawablePadding="@dimen/padding_5dp"
+            android:drawableStart="@drawable/pickup_dot_icon"
+            android:maxLines="1"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/my_pickup_row_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/loc"
+            android:drawablePadding="@dimen/padding_5dp"
+            android:drawableStart="@drawable/loc"
+            android:maxLines="1"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_5dp"
+            android:background="@color/light_gray_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_pickup_row_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_5dp"
+                android:layout_marginStart="@dimen/margin_top_5dp"
+                android:maxLines="1"
+                android:text="@string/amount"
+                android:textColor="@color/blueColor"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_top_5dp"
+                android:layout_marginStart="@dimen/margin_top_5dp"
+                android:text="@string/est_fare" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgRemove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="@dimen/padding_10dp"
+                    android:layout_marginRight="@dimen/padding_10dp"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/remove_pickup" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

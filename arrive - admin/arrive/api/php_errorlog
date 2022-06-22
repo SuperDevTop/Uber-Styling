@@ -1,0 +1,37 @@
+[06-Apr-2018 05:29:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pcthepro/public_html/creb/arrive5/api/api.php on line 186
+[18-Apr-2018 01:56:42 CST6CDT] PHP Parse error:  syntax error, unexpected '"select id,vehicle_type from v' (T_CONSTANT_ENCAPSED_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 331
+[18-Apr-2018 02:02:26 CST6CDT] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/pcthepro/public_html/arrive5/api/api.php on line 337
+[18-Apr-2018 02:04:55 CST6CDT] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/pcthepro/public_html/arrive5/api/api.php on line 338
+[18-Apr-2018 02:06:23 CST6CDT] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/pcthepro/public_html/arrive5/api/api.php on line 338
+[18-Apr-2018 02:06:28 CST6CDT] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/pcthepro/public_html/arrive5/api/api.php on line 338
+[18-Apr-2018 02:07:20 CST6CDT] PHP Fatal error:  Call to a member function fetch_assoc() on boolean in /home/pcthepro/public_html/arrive5/api/api.php on line 340
+[18-Apr-2018 04:32:12 CST6CDT] PHP Parse error:  syntax error, unexpected '–' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:32:36 CST6CDT] PHP Parse error:  syntax error, unexpected '–' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:32:40 CST6CDT] PHP Parse error:  syntax error, unexpected '–' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:34:19 CST6CDT] PHP Parse error:  syntax error, unexpected '–' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:34:28 CST6CDT] PHP Parse error:  syntax error, unexpected '–' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:34:51 CST6CDT] PHP Fatal error:  Call to undefined function RADIANS() in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[18-Apr-2018 04:35:44 CST6CDT] PHP Fatal error:  Call to undefined function RADIANS() in /home/pcthepro/public_html/arrive5/api/api.php on line 369
+[20-Apr-2018 04:12:38 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[20-Apr-2018 04:12:42 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[20-Apr-2018 04:12:49 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[20-Apr-2018 04:12:55 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[20-Apr-2018 04:13:31 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[20-Apr-2018 04:17:18 CST6CDT] PHP Parse error:  syntax error, unexpected '{' in /home/pcthepro/public_html/arrive5/api/api.php on line 348
+[18-Jun-2018 23:46:37 CST6CDT] PHP Fatal error:  Call to undefined method mysqli_result::mysqli_fetch_array() in /home/pcthepro/public_html/arrive5/api/api.php on line 553
+[18-Jun-2018 23:46:41 CST6CDT] PHP Fatal error:  Call to undefined method mysqli_result::mysqli_fetch_array() in /home/pcthepro/public_html/arrive5/api/api.php on line 553
+[18-Jun-2018 23:47:47 CST6CDT] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/pcthepro/public_html/arrive5/api/api.php on line 553
+[18-Jun-2018 23:47:49 CST6CDT] PHP Fatal error:  Call to undefined method mysqli_result::fetch_all() in /home/pcthepro/public_html/arrive5/api/api.php on line 553
+[29-Jun-2018 07:02:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'send_sms' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 182
+[29-Jun-2018 07:02:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'send_sms' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 182
+[29-Jun-2018 07:02:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'send_sms' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 182
+[29-Jun-2018 07:02:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'send_sms' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 182
+[29-Jun-2018 07:03:38 CST6CDT] PHP Parse error:  syntax error, unexpected 'send_sms' (T_STRING) in /home/pcthepro/public_html/arrive5/api/api.php on line 182
+[29-Jun-2018 07:08:47 CST6CDT] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in /home/pcthepro/public_html/arrive5/api/api.php on line 181
+[29-Jun-2018 07:09:07 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pcthepro/public_html/arrive5/api/api.php on line 1106
+[29-Jun-2018 07:09:09 CST6CDT] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/pcthepro/public_html/arrive5/api/api.php on line 1106
+[29-Jun-2018 07:10:57 CST6CDT] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/pcthepro/public_html/arrive5/api/api.php on line 1106
+[29-Jun-2018 07:10:59 CST6CDT] PHP Parse error:  syntax error, unexpected 'private' (T_PRIVATE) in /home/pcthepro/public_html/arrive5/api/api.php on line 1106
+[15-Aug-2018 22:45:39 CST6CDT] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/pcthepro/public_html/arrive5/api/api.php on line 752
+[20-Sep-2018 00:56:02 CST6CDT] PHP Parse error:  syntax error, unexpected '$message' (T_VARIABLE) in /home/pcthepro/public_html/arrive5/api/api.php on line 1135
+[21-Sep-2018 02:08:08 CST6CDT] PHP Parse error:  syntax error, unexpected '"otp"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/pcthepro/public_html/arrive5/api/api.php on line 109
